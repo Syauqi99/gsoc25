@@ -21,7 +21,7 @@ Located in the folders:
 
 ---
 
-## Test Plans
+## Test
 
 - **Easy:** Compile and run Volesti. Use the R extension to visualize sampling (with any sampling algorithm) in a polytope.
 - **Medium:** Extend the hit-and-run algorithm to sample from the boundary of the spectrahedron (feasible region of an SDP).
