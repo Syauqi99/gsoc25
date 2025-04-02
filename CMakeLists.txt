@@ -9,13 +9,3 @@ find_package(Volesti REQUIRED)
 
 include_directories(${EIGEN3_INCLUDE_DIR} ${Volesti_INCLUDE_DIRS})
 
-# Download Volesti package into third_partylibrary
-include(ExternalProject)
-ExternalProject_Add(volesti
-    GIT_REPOSITORY https://github.com/volesti/volesti.git
-    GIT_TAG master
-    SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/third_partylibrary/volesti
-    CONFIGURE_COMMAND ""
-    BUILD_COMMAND ""
-    INSTALL_COMMAND ""
-)
