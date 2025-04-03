@@ -129,16 +129,14 @@ add_definitions(${CXX_COVERAGE_COMPILE_FLAGS} "-ldl")
 add_definitions(${CXX_COVERAGE_COMPILE_FLAGS} "-DBOOST_NO_AUTO_PTR")
 add_definitions(${CMAKE_CXX_FLAGS} "-DMKL_ILP64")
 
-# Add your executable
-add_executable(my_program scripts/test2_main.cpp)
+# Add executable for test2_main (Boundary Spectrahedron Sampling)
+add_executable(test2_main scripts/test2_main.cpp)
+target_link_libraries(test2_main lp_solve ${MKL_LINK} coverage_config)
 
-# Link against volesti dependencies
-TARGET_LINK_LIBRARIES(my_program lp_solve ${MKL_LINK} coverage_config)
-
-# If you need NLP oracles
 if(NOT DISABLE_NLP_ORACLES)
-  TARGET_LINK_LIBRARIES(my_program ${IFOPT} ${IFOPT_IPOPT} ${PTHREAD} ${GMP} ${MPSOLVE} ${FFTW3})
+  target_link_libraries(test2_main ${IFOPT} ${IFOPT_IPOPT} ${PTHREAD} ${GMP} ${MPSOLVE} ${FFTW3})
 endif()
+
 
 # Add additional executables as needed
 # add_executable(another_program src/another.cpp)
@@ -147,6 +145,23 @@ endif()
 # Enable testing if needed
 # enable_testing()
 # add_test(NAME test_example COMMAND my_program --test)
+
+# Build Instructions:
+# -------------------
+# To build the project and test executables:
+#   mkdir build && cd build
+#   cmake ..
+#   make
+#
+# To run tests:
+#   For the LP test (test2_main):
+#     ./test2_main
+#   For additional tests (test3_main):
+#     ./test3_main
+#
+# Note: All required data is located in the data folders.
+# The GSOC_25.ipynb notebook contains the script to generate visualizations
+# and perform the feasible linear programming test.
 
 # Set additional flags for specific executables if needed
 set(ADDITIONAL_FLAGS "-march=native -DSIMD_LEN=0 -DTIME_KEEPING")
@@ -186,7 +201,7 @@ add_library(interior_point_lp STATIC ${SOURCES} ${HEADERS})
 # Link Eigen to the library
 target_link_libraries(interior_point_lp Eigen3::Eigen)
 
-# Add executable for testing
+# Add executable for testing (renamed to avoid duplicate target)
 add_executable(test3_main scripts/test3_main.cpp)
 
 # Link the interior_point_lp library and Eigen to test3_main

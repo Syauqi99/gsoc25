@@ -92,6 +92,7 @@ test2_main_EXTERNAL_OBJECTS =
 
 test2_main: CMakeFiles/test2_main.dir/scripts/test2_main.cpp.o
 test2_main: CMakeFiles/test2_main.dir/build.make
+test2_main: liblp_solve.a
 test2_main: CMakeFiles/test2_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/syauqirp/gsoc25/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test2_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test2_main.dir/link.txt --verbose=$(VERBOSE)

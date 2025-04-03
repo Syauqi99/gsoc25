@@ -143,17 +143,17 @@ QD_LIB/fast:
 .PHONY : QD_LIB/fast
 
 #=============================================================================
-# Target rules for targets named my_program
+# Target rules for targets named test2_main
 
 # Build rule for target.
-my_program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_program
-.PHONY : my_program
+test2_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test2_main
+.PHONY : test2_main
 
 # fast build rule for target.
-my_program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/build
-.PHONY : my_program/fast
+test2_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/build
+.PHONY : test2_main/fast
 
 #=============================================================================
 # Target rules for targets named interior_point_lp
@@ -186,7 +186,7 @@ scripts/test2_main.o: scripts/test2_main.cpp.o
 
 # target to build an object file
 scripts/test2_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/scripts/test2_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/scripts/test2_main.cpp.o
 .PHONY : scripts/test2_main.cpp.o
 
 scripts/test2_main.i: scripts/test2_main.cpp.i
@@ -194,7 +194,7 @@ scripts/test2_main.i: scripts/test2_main.cpp.i
 
 # target to preprocess a source file
 scripts/test2_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/scripts/test2_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/scripts/test2_main.cpp.i
 .PHONY : scripts/test2_main.cpp.i
 
 scripts/test2_main.s: scripts/test2_main.cpp.s
@@ -202,7 +202,7 @@ scripts/test2_main.s: scripts/test2_main.cpp.s
 
 # target to generate assembly for a file
 scripts/test2_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/scripts/test2_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/scripts/test2_main.cpp.s
 .PHONY : scripts/test2_main.cpp.s
 
 scripts/test3_main.o: scripts/test3_main.cpp.o
@@ -1080,7 +1080,7 @@ help:
 	@echo "... QD_LIB"
 	@echo "... interior_point_lp"
 	@echo "... lp_solve"
-	@echo "... my_program"
+	@echo "... test2_main"
 	@echo "... test3_main"
 	@echo "... scripts/test2_main.o"
 	@echo "... scripts/test2_main.i"

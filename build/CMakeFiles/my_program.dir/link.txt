@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/my_program.dir/scripts/test2_main.cpp.o -o my_program  liblp_solve.a 

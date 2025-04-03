@@ -64,18 +64,23 @@ void readLPData(const std::string& filename, Eigen::MatrixXd &A, Eigen::VectorXd
     file.close();
 }
 
-int main() {
-    // Read LP data from text file
+int main(int argc, char** argv) {
+    // Use command-line argument if provided, else default LP file path
+    std::string lp_filename = "/home/syauqirp/gsoc25/data/feasible_lp105.txt";
+    if (argc > 1) {
+        lp_filename = argv[1];
+    }
+    
     int numVars = 0, numConstr = 0;
     Eigen::MatrixXd A;
     Eigen::VectorXd b, c;
     try {
-        readLPData("/home/syauqirp/gsoc25/data/feasible_lp1000500.txt", A, b, c, numVars, numConstr);
+        readLPData(lp_filename, A, b, c, numVars, numConstr);
     } catch (const std::exception& ex) {
         std::cerr << "Error reading LP file: " << ex.what() << std::endl;
         return 1;
     }
-    std::cout << "Read LP problem: " << numVars << " variables, " << numConstr << " constraints." << std::endl;
+    std::cout << "Read LP problem from " << lp_filename << ": " << numVars << " variables, " << numConstr << " constraints." << std::endl;
     
     // Set solver parameters
     InteriorPointLP::Parameters params;

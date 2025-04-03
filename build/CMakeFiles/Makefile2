@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = /home/syauqirp/gsoc25/build
 # The main recursive "all" target.
 all: CMakeFiles/lp_solve.dir/all
 all: CMakeFiles/QD_LIB.dir/all
-all: CMakeFiles/my_program.dir/all
+all: CMakeFiles/test2_main.dir/all
 all: CMakeFiles/interior_point_lp.dir/all
 all: CMakeFiles/test3_main.dir/all
 .PHONY : all
@@ -77,7 +77,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/lp_solve.dir/clean
 clean: CMakeFiles/QD_LIB.dir/clean
-clean: CMakeFiles/my_program.dir/clean
+clean: CMakeFiles/test2_main.dir/clean
 clean: CMakeFiles/interior_point_lp.dir/clean
 clean: CMakeFiles/test3_main.dir/clean
 .PHONY : clean
@@ -135,30 +135,30 @@ CMakeFiles/QD_LIB.dir/clean:
 .PHONY : CMakeFiles/QD_LIB.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/my_program.dir
+# Target rules for target CMakeFiles/test2_main.dir
 
 # All Build rule for target.
-CMakeFiles/my_program.dir/all: CMakeFiles/lp_solve.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/syauqirp/gsoc25/build/CMakeFiles --progress-num=39,40 "Built target my_program"
-.PHONY : CMakeFiles/my_program.dir/all
+CMakeFiles/test2_main.dir/all: CMakeFiles/lp_solve.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/syauqirp/gsoc25/build/CMakeFiles --progress-num=39,40 "Built target test2_main"
+.PHONY : CMakeFiles/test2_main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/my_program.dir/rule: cmake_check_build_system
+CMakeFiles/test2_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/syauqirp/gsoc25/build/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_program.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test2_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/syauqirp/gsoc25/build/CMakeFiles 0
-.PHONY : CMakeFiles/my_program.dir/rule
+.PHONY : CMakeFiles/test2_main.dir/rule
 
 # Convenience name for target.
-my_program: CMakeFiles/my_program.dir/rule
-.PHONY : my_program
+test2_main: CMakeFiles/test2_main.dir/rule
+.PHONY : test2_main
 
 # clean rule for target.
-CMakeFiles/my_program.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/clean
-.PHONY : CMakeFiles/my_program.dir/clean
+CMakeFiles/test2_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_main.dir/build.make CMakeFiles/test2_main.dir/clean
+.PHONY : CMakeFiles/test2_main.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/interior_point_lp.dir
