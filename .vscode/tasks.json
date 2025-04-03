@@ -2,34 +2,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-debug",
+            "label": "Build",
             "type": "shell",
-            "command": "g++",
+            "command": "cmake",
             "args": [
-                "-g",
-                "-std=c++14",
-                "-I${workspaceFolder}/include",
-                "-I/usr/include/eigen3",
-                "${workspaceFolder}/scripts/test3_main.cpp",
-                "${workspaceFolder}/src/InteriorPointLP.cpp",
-                "-o",
-                "${workspaceFolder}/bin/test3_debug"
+                "--build",
+                "${workspaceFolder}/build"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": true,
-                "clear": false
-            }
+            "problemMatcher": ["$gcc"],
+            "detail": "Build the project using CMake"
         }
     ]
 }

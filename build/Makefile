@@ -253,6 +253,30 @@ src/interior_point_lp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interior_point_lp.dir/build.make CMakeFiles/interior_point_lp.dir/src/interior_point_lp.cpp.s
 .PHONY : src/interior_point_lp.cpp.s
 
+src/lp_utils.o: src/lp_utils.cpp.o
+.PHONY : src/lp_utils.o
+
+# target to build an object file
+src/lp_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interior_point_lp.dir/build.make CMakeFiles/interior_point_lp.dir/src/lp_utils.cpp.o
+.PHONY : src/lp_utils.cpp.o
+
+src/lp_utils.i: src/lp_utils.cpp.i
+.PHONY : src/lp_utils.i
+
+# target to preprocess a source file
+src/lp_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interior_point_lp.dir/build.make CMakeFiles/interior_point_lp.dir/src/lp_utils.cpp.i
+.PHONY : src/lp_utils.cpp.i
+
+src/lp_utils.s: src/lp_utils.cpp.s
+.PHONY : src/lp_utils.s
+
+# target to generate assembly for a file
+src/lp_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interior_point_lp.dir/build.make CMakeFiles/interior_point_lp.dir/src/lp_utils.cpp.s
+.PHONY : src/lp_utils.cpp.s
+
 tp_library/volesti/external/PackedCSparse/qd/bits.o: tp_library/volesti/external/PackedCSparse/qd/bits.cc.o
 .PHONY : tp_library/volesti/external/PackedCSparse/qd/bits.o
 
@@ -1067,6 +1091,9 @@ help:
 	@echo "... src/interior_point_lp.o"
 	@echo "... src/interior_point_lp.i"
 	@echo "... src/interior_point_lp.s"
+	@echo "... src/lp_utils.o"
+	@echo "... src/lp_utils.i"
+	@echo "... src/lp_utils.s"
 	@echo "... tp_library/volesti/external/PackedCSparse/qd/bits.o"
 	@echo "... tp_library/volesti/external/PackedCSparse/qd/bits.i"
 	@echo "... tp_library/volesti/external/PackedCSparse/qd/bits.s"

@@ -42,7 +42,7 @@ else()
     message(STATUS "Library ifopt found: ${IFOPT}")
     message(STATUS "Library gmp found: ${GMP}")
     message(STATUS "Library mpsolve found: ${MPSOLVE}")
-    message(STATUS "Library fftw3 found:" ${FFTW3})
+    message(STATUS "Library fftw3 found: ${FFTW3}")
   endif()
 endif()
 
@@ -122,7 +122,6 @@ else()
 endif()
 
 # Compiler flags
-add_definitions(${CMAKE_CXX_FLAGS} "-g")  # enable debugger
 add_definitions(${CMAKE_CXX_FLAGS} "-O3")  # optimization of the compiler
 set(CMAKE_CXX_STANDARD 17)  # enable the c++17 support needed by autodiff
 add_definitions(${CXX_COVERAGE_COMPILE_FLAGS} "-lm")
@@ -172,11 +171,13 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 # Add the source files
 set(SOURCES
     src/interior_point_lp.cpp
+    src/lp_utils.cpp
 )
 
 # Add the header files
 set(HEADERS
     include/interior_point_lp.h
+    include/lp_utils.h
 )
 
 # Create the library
@@ -186,11 +187,8 @@ add_library(interior_point_lp STATIC ${SOURCES} ${HEADERS})
 target_link_libraries(interior_point_lp Eigen3::Eigen)
 
 # Add executable for testing
-add_executable(test3_main
-    scripts/test3_main.cpp
-    include/interior_point_lp.h
-)
+add_executable(test3_main scripts/test3_main.cpp)
 
-# Link the library to the executable
-target_link_libraries(test3_main interior_point_lp)
+# Link the interior_point_lp library and Eigen to test3_main
+target_link_libraries(test3_main interior_point_lp Eigen3::Eigen)
 
