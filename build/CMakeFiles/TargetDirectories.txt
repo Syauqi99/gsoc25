@@ -1,0 +1,7 @@
+/home/syauqirp/gsoc25/build/CMakeFiles/lp_solve.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/QD_LIB.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/my_program.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/interior_point_lp.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/test3_main.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/edit_cache.dir
+/home/syauqirp/gsoc25/build/CMakeFiles/rebuild_cache.dir

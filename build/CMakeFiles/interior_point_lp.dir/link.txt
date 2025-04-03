@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinterior_point_lp.a CMakeFiles/interior_point_lp.dir/src/interior_point_lp.cpp.o
+/usr/bin/ranlib libinterior_point_lp.a

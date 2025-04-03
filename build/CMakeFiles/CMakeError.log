@@ -1,0 +1,90 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6cd0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f6cd0.dir/build.make CMakeFiles/cmTC_f6cd0.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6cd0.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_f6cd0.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+gmake[1]: *** [CMakeFiles/cmTC_f6cd0.dir/build.make:78: CMakeFiles/cmTC_f6cd0.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f6cd0/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1264b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1264b.dir/build.make CMakeFiles/cmTC_1264b.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1264b.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_1264b.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+gmake[1]: *** [CMakeFiles/cmTC_1264b.dir/build.make:78: CMakeFiles/cmTC_1264b.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1264b/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_89141/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_89141.dir/build.make CMakeFiles/cmTC_89141.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_89141.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd981 -o CMakeFiles/cmTC_89141.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd981'
+gmake[1]: *** [CMakeFiles/cmTC_89141.dir/build.make:78: CMakeFiles/cmTC_89141.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_89141/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d7729/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7729.dir/build.make CMakeFiles/cmTC_d7729.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7729.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd2304 -o CMakeFiles/cmTC_d7729.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd2304'
+gmake[1]: *** [CMakeFiles/cmTC_d7729.dir/build.make:78: CMakeFiles/cmTC_d7729.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d7729/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05fbf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05fbf.dir/build.make CMakeFiles/cmTC_05fbf.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_05fbf.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -strict-ansi -o CMakeFiles/cmTC_05fbf.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-strict-ansi'; did you mean '-fstrict-enums'?
+gmake[1]: *** [CMakeFiles/cmTC_05fbf.dir/build.make:78: CMakeFiles/cmTC_05fbf.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_05fbf/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_49313/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_49313.dir/build.make CMakeFiles/cmTC_49313.dir/build
+gmake[1]: Entering directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_49313.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Qunusedarguments  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -Qunused-arguments -o CMakeFiles/cmTC_49313.dir/src.cxx.o -c /home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Qunused-arguments'
+gmake[1]: *** [CMakeFiles/cmTC_49313.dir/build.make:78: CMakeFiles/cmTC_49313.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/syauqirp/gsoc25/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_49313/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
